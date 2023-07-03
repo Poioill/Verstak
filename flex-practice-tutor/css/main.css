@@ -169,6 +169,7 @@ body {
 .services__box{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     justify-content: space-between;
 }
@@ -202,11 +203,12 @@ body {
 }
 /* ===advantages=================================================== */
 .advantages__container{
-    padding: 280px 0;
+    padding: 280px 0 150px;
 }
 .advantages__box{
     display: flex;
     position: relative;
+    justify-content: center;
     gap: 24px;
     margin: 0 auto;
 }
@@ -226,4 +228,203 @@ body {
     font-weight: 700;
     line-height: 140%;
 }
-/* ================================================================ */
+@media (max-width:1100px) {
+
+    
+}
+/* =about=============================================================== */
+.about__container{
+   max-width: 1076px;
+   margin: 0 auto 75px;
+}
+.about__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-picture{
+    margin: 0 -86px 0 0 ;
+    z-index: 2;
+    position: relative;
+}
+.item-body{
+    color: #333;
+    padding: 70px 60px 70px 146px;
+    background-color: #F7ECE1;
+}
+.title{
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+}
+.title:not(:last-child){
+    margin: 0 0 25px 0;
+}
+.about__text{
+    font-size: 14px;
+    line-height: 140%;
+}
+.about__text:not(:last-child){
+    margin: 0 0 35px 0;
+}
+.about__subtitle{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0 0 25px 0;
+}
+.list-item{
+    font-size: 14px;
+    line-height: 140%;
+    background: url('../img/svg/about-list.svg') 0 4px no-repeat;
+    padding: 0 0 0 31px;
+}
+.list-item:not(:last-child){
+    margin: 0 0 10px 0;
+}
+@media (max-width: 1200px) {
+    .item-body{
+        padding: 70px 60px;
+    }
+    .item-picture {
+        background-color: #F7ECE1;
+        margin: 0 0 30px 0;
+    }
+    .about__box{
+        flex-wrap: wrap;
+    }
+    .advantages__box{
+        flex-wrap: wrap;
+    }
+}
+/* =====trainers================================================= */
+.trainers__container{
+    margin: 75px auto;
+    color: #333;
+}
+.trainers .title{
+    margin: 0 0 75px 0;
+}
+.trainer__img img{
+    padding: 0 15px;
+    border: 1px solid #F7ECE1;
+}
+.trainer__img:not(:last-child){    
+    margin: 0 0 25px 0;
+}
+.trainers__box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 24px;
+}
+.treiner__column{
+    max-width: 196px;
+    flex: 0 1 16.667%;
+}
+.trainer__name{
+    font-size: 21px;
+    padding: 0 40px;
+    font-weight: 600;
+    line-height: 140%;
+}
+.trainer__name:not(:last-child){
+    margin: 0 0 15px 0;
+}
+.trainer__text{
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 300;
+}
+/* ===price and serv=============================== */
+.main__box{
+    padding: 75px 0;
+}
+.main__body{
+    display: flex;
+    color: #333;
+    justify-content: space-between;
+}
+.serv__container .title, .price__container .title{
+    margin: 0 0 50px 0;
+}
+/* ==price====================================================== */
+.price{
+    flex: 1 1 100%;
+    margin: 0 0 50px 0;
+}
+.price__container{
+    max-width: 526px;
+}
+.price__box{
+    width: 100%;
+}
+.price__item{
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    background-color: #8D86C9;
+}
+.price__item:hover{
+    background-color: #7870c1;
+}
+.price__item:not(:last-child){
+    margin: 0 0 30px 0;
+}
+.price__title{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 140%;
+}
+.price__title a{
+    color: white;
+}
+/* ===serv======================================= */
+.serv__container{
+    max-width: 636px;
+}
+.serv__img{
+    border: 1px solid #F7ECE1;
+    padding: 30px 25px;
+    position: relative;
+}
+.img-text{
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 140%;
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 65px;
+}
+@media (max-width: 1267px) {
+    .main__box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+}
+/* =footer====================================================== */
+.footer{
+    background-color: #F7ECE1;
+}
+.footer__box{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__com{
+    color: #333;
+    opacity: 0.3;
+}
+.footer__menu a{
+    color: #333;
+}
+.footer__social img:not(:last-child){
+    margin: 0 19px 0 0;
+}
