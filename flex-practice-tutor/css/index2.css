@@ -55,6 +55,12 @@ a{color: white;}
     padding: 0 15px;
     box-sizing: content-box;
 }
+.ps_container{
+    max-width: 648px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
 ._ibg{
     position: relative;
 }
@@ -367,6 +373,17 @@ a{color: white;}
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 640px) {
+    .trainers__box{
+        flex-wrap: wrap;
+    }
+    .trainers__box .about__title{
+        margin: 0 0 10px 0;
+    }
+    .trainers__slider-click{
+        margin: 0 0 15px 0;
+    }
+}
 .trainers__slider{
     position: relative;
 }
@@ -412,4 +429,111 @@ a{color: white;}
     opacity: 0.8;
     cursor: pointer;
     transition-duration: 0.7s;
+}
+/* ==PRICE AND SERVICE===================================================================== */
+.price-service__box{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+.ps{
+    margin: 150px 0;
+}
+.price__container{
+    max-width: 526px;
+}
+.price__item{
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8D86C9;
+}
+.price__title{
+    font-size: 21px;
+    color: white;
+    font-weight: 600;
+    line-height: 140%;
+}
+.price__link{
+    display: block;
+}
+.price__link:not(:last-child){
+    display: block;
+    margin: 0 0 30px 0;
+}
+.price__item:hover{
+    background-color: #615aa3;
+    transition-duration: 0.5s;
+}
+/* ---- */
+.serv__container{
+    max-width: 636px;
+}
+.serv__item{
+    position: relative;    
+}
+.serv-img{
+    border: 1px solid #F7ECE1;
+    padding: 30px 25px;
+    max-width: 636px;
+}
+.serv-text{
+    position: absolute;
+    left: 65px;
+    bottom: 60px;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 140%;
+    color: white;
+}
+.price, .serv{
+    flex: 0 1 50%;
+}
+@media (max-width: 992px) {
+    .price-service__box{
+        flex-wrap: wrap;
+    }
+    .price, .serv{
+        flex: 0 1 100%;
+    }
+    .serv__container, .price__container{
+        max-width: inherit;
+    }
+}
+@media (max-width: 470px) {
+    .about__title{
+        font-size: 28px;
+    }    
+    .serv-text{
+        bottom: 40px;
+        left: 45px;
+        font-size: 22px;
+    }
+}
+.serv__slider{
+    position: relative;
+}
+.ps__slider-click .slick-arrow{
+    font-size: 0;
+    width: 45px;
+    height: 45px;
+}
+/* ===FOOTER================================================== */
+.footer{
+    background-color: #F7ECE1;
+    height: 96px;
+}
+.footer__item .header__menu li a{
+    color: #333;
+}
+.footer__item:first-child{
+    opacity: 0.3;
+}
+.footer__box{
+    display: flex;
+    margin: auto 0;
+    height: 96px;
+    align-items: center;
+    justify-content: space-between;
 }
