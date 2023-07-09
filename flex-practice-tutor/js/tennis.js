@@ -27,6 +27,11 @@ function updateSlider() {
 
 $(document).ready(function(){
 
+    $('.header__burger').click(function(event){
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    })
+
     slider.slick({
         slidesToShow: 6,
         appendArrows: $('.trainers__slider-click'),
