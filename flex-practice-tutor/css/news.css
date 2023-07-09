@@ -1,0 +1,120 @@
+.news-main__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;top: 0;
+}
+.news-main__block{
+    position: relative;
+    margin: 0 auto;
+    height: 280px;
+    text-align: center;
+}
+.news-title{
+    position: absolute;
+    top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 140%;
+}
+/* ---------- */
+.news-main__all{
+    margin: 80px 0 120px 0;
+    /* background-color: rgb(27, 26, 39) */
+}
+.news__box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+.news__column{
+    flex: 0 1 33.333%;
+    padding: 0 12px;
+    margin: 0 0 24px 0;
+}
+.news__item{
+    border: 1px solid #F7ECE1;
+    padding: 30px 40px;
+    max-width: 416px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.news-item__pic:not(:last-child){
+    margin: 0 0 25px 0;
+}
+.news-item__data{
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.news-item__data:not(:last-child){
+    margin: 0 0 15px 0;
+}
+.news-item__text{
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 140%;
+}
+.news-item__text{
+    margin: 0 0 20px 0;
+    flex: 1 1 auto;
+}
+.news-item__btn{
+    max-width: 132px;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    background-color: #8D86C9;
+    transition-duration: 0.6s;
+}
+.news-item__btn:hover{
+    opacity: 0.7;
+}
+.news-item__pic img{
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+}
+@media (max-width: 992px) {
+    .news-title{
+        top: 170px;
+        font-size: 36px;
+    }
+    .news-item__text{
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+    .news-main__all{
+        margin: 40px 0 70px 0;
+    }
+    .news__column{
+        flex: 0 1 50%;
+    }  
+}
+@media (max-width: 580px) {
+    .news__column{
+        flex: 0 1 100%;
+        padding: 0;
+    }
+    .news__box{
+        margin: 0;
+    }
+    .news__item{
+        max-width: 100%;
+    }
+    .news-title{
+        font-size: 30px;
+    }
+    .news-item__text{
+        font-size: 12px;
+    }
+}
