@@ -1,5 +1,7 @@
 var slider = $('.trainers__slider');
 var sliderTwo = $('.serv__slider');
+var sliderAbout = $('.about-gallery__slider');
+var sliderRules = $('.about-rules__slider');
 
 function updateSlider() {
     var windowWidth = $(window).width();
@@ -42,8 +44,25 @@ $(document).ready(function(){
         appendArrows: $('.ps__slider-click'),
         infinite: true,
     })
+    sliderAbout.slick({
+        slidesToShow: 1,
+        appendArrows: $('.about__slider-click'),
+        infinite: true,
+    })
+    sliderRules.slick({
+        slidesToShow: 1,
+        dots: true,
+        appendDots: $('.about-rules__slider-click'),
+        customPaging: function(slider, i) {
+        var li =  $(".rules-list li");
+        return (i + 1) + '.  ' + li[i].innerHTML;
+           },
+        dotsClass: 'news__dots-list',
+        infinite: true,
+        vertical: true,
+    })
     updateSlider();
-    
+
     $(window).resize(function() {
         updateSlider();
     });
